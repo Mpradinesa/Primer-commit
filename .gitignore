@@ -1,0 +1,11 @@
+# Archivos de configuracion
+.env
+*.key
+
+# Directorios de Build
+/ build/
+/Dist/
+
+# logs y caches
+*.log
+.cache

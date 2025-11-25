@@ -1,103 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Carrusel a Pantalla Completa</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Carrusel a Pantalla Completa</title>
 
-  <!-- Bootstrap local -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <!-- Bootstrap local -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-  <!-- Estilos personalizados -->
-  <style>
-    /* Hace que cada imagen ocupe todo el alto visible del navegador */
-    .carousel-item img {
-      width: 100%;
-      height: 100vh; /* vh = altura del viewport */
-      object-fit: cover; /* Recorta para llenar sin deformar */
-    }
+        <!-- Estilos personalizados -->
+        <style>
+            /* Hace que cada imagen ocupe todo el alto visible del navegador */
+            .carousel-item img {
+                width: 100%;
+                height: 100vh; /* vh = altura del viewport */
+                object-fit: cover; /* Recorta para llenar sin deformar */
+            }
 
-    /* Estilo opcional para los textos */
-    .carousel-caption {
-      background: rgba(0, 0, 0, 0.4);
-      border-radius: 10px;
-      padding: 15px;
-    }
-  </style>
-</head>
+            /* Estilo opcional para los textos */
+            .carousel-caption {
+                background: rgba(0, 0, 0, 0.4);
+                border-radius: 10px;
+                padding: 15px;
+            }
+        </style>
+    </head>
 
-<body>
-  <div id="galeria" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <body>
+        <div
+            id="galeria"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+        >
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button
+                    type="button"
+                    data-bs-target="#galeria"
+                    data-bs-slide-to="0"
+                    class="active"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#galeria"
+                    data-bs-slide-to="1"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#galeria"
+                    data-bs-slide-to="2"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#galeria"
+                    data-bs-slide-to="3"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#galeria"
+                    data-bs-slide-to="4"
+                ></button>
+            </div>
 
-    <!-- Indicadores -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#galeria" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#galeria" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#galeria" data-bs-slide-to="2"></button>
-      <button type="button" data-bs-target="#galeria" data-bs-slide-to="3"></button>
-      <button type="button" data-bs-target="#galeria" data-bs-slide-to="4"></button>
-    </div>
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/1.jpg" alt="Imagen 1" />
+                    <div class="carousel-caption">
+                        <h3>Primera imagen</h3>
+                        <p>Ejemplo de texto descriptivo sobre la imagen</p>
+                    </div>
+                </div>
 
-    <!-- Slides -->
-    <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="assets/img/2.jpg" alt="Imagen 2" />
+                    <div class="carousel-caption">
+                        <h3>Segunda imagen</h3>
+                        <p>Texto adaptado al banner, presentación o portada</p>
+                    </div>
+                </div>
 
-      <div class="carousel-item active">
-        <img src="assets/img/1.jpg" alt="Imagen 1">
-        <div class="carousel-caption">
-          <h3>Primera imagen</h3>
-          <p>Ejemplo de texto descriptivo sobre la imagen</p>
+                <div class="carousel-item">
+                    <img src="assets/img/3.jpg" alt="Imagen 3" />
+                    <div class="carousel-caption">
+                        <h3>Tercera imagen</h3>
+                        <p>El carrusel se adapta al alto del navegador</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="assets/img/4.jpg" alt="Imagen 4" />
+                    <div class="carousel-caption">
+                        <h3>
+                            Esta modificacion se hizo en ramaB de Index.html
+                        </h3>
+                        <p>El carrusel se adapta al alto del navegador</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="assets/img/5.jpg" alt="Imagen 5" />
+                    <div class="carousel-caption">
+                        <h3>Quinta imagen</h3>
+                        <p>El carrusel se adapta al alto del navegador</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin carousel-inner -->
+
+            <!-- Controles -->
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#galeria"
+                data-bs-slide="prev"
+            >
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#galeria"
+                data-bs-slide="next"
+            >
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
         </div>
-      </div>
 
-      <div class="carousel-item">
-        <img src="assets/img/2.jpg" alt="Imagen 2">
-        <div class="carousel-caption">
-          <h3>Segunda imagen</h3>
-          <p>Texto adaptado al banner, presentación o portada</p>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <img src="assets/img/3.jpg" alt="Imagen 3">
-        <div class="carousel-caption">
-          <h3>Tercera imagen</h3>
-          <p>El carrusel se adapta al alto del navegador</p>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <img src="assets/img/4.jpg" alt="Imagen 4">
-        <div class="carousel-caption">
-          <h3>Cuarta imagen</h3>
-          <p>El carrusel se adapta al alto del navegador</p>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <img src="assets/img/5.jpg" alt="Imagen 5">
-        <div class="carousel-caption">
-          <h3>Quinta imagen</h3>
-          <p>El carrusel se adapta al alto del navegador</p>
-        </div>
-      </div>
-
-    </div> <!-- Fin carousel-inner -->
-
-    <!-- Controles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#galeria" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-
-    <button class="carousel-control-next" type="button" data-bs-target="#galeria" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-      <span class="visually-hidden">Siguiente</span>
-    </button>
-
-  </div>
-
-  <!-- Bootstrap JS local -->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-</body>
+        <!-- Bootstrap JS local -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
-
