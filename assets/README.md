@@ -1,11 +1,11 @@
-# 📚 Papel & Tinta - E-commerce de Artículos de Librería
+# Libreria Virtual- E-commerce de Artículos de Librería
 
 Frontend de una tienda online de artículos de librería, desarrollado como proyecto del Módulo 2.
 
-## ✨ Características
+##  Características
 
--   **Catálogo de productos** con cards de Bootstrap
--   **Página de detalle** de productos
+-   Catálogo de productos
+-   Página de detalle
 -   **Carrito de compras** con persistencia en localStorage
 -   **Diseño responsive** mobile-first
 -   **Navegación intuitiva** con navbar y footer
